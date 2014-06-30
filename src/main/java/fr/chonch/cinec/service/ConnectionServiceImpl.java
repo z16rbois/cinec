@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
@@ -21,7 +20,7 @@ public class ConnectionServiceImpl implements ConnectionService{
 
 		try {
 
-			socket = new Socket(InetAddress.getLocalHost(),2009);
+			socket = new Socket("195.132.202.154",2009);
 			System.out.println("Demande de connexion");
 
 

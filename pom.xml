@@ -144,10 +144,16 @@
 				<version>2.4</version>
 				<configuration>
 					<webXml>WebContent\WEB-INF\web.xml</webXml>
+					<webResources>
+						<resource>
+							<!-- this is relative to the pom.xml directory -->
+							<directory>WebContent</directory>
+						</resource>
+					</webResources>
 				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>

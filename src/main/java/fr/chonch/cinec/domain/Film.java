@@ -11,7 +11,7 @@ public class Film {
 	@Id
 	@GeneratedValue
 	private int id;
-	
+
 	@Column
 	private String titre;
 
@@ -19,7 +19,7 @@ public class Film {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(final int id) {
 		this.id = id;
 	}
 
@@ -27,9 +27,9 @@ public class Film {
 		return titre;
 	}
 
-	public void setTitre(String titre) {
+	public void setTitre(final String titre) {
 		this.titre = titre;
 	}
-	
-	
+
+
 }
